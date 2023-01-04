@@ -1,0 +1,16 @@
+---
+title : "In Class Exercise 1"
+author: "Oytun Gungor"
+date  : "2023-01-04"
+output: html_document
+---
+
+## Import and install required libraries
+```{r}
+install.packages("tidyverse")
+install.packages("nycflights13")
+```
+## Analyzing the data structure
+```{r}
+head(plans)
+```{r}
