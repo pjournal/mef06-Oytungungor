@@ -1,12 +1,77 @@
 ---
-title: "Assignment 1"
-date: "2022-10-01"
+title : "BDA-503 Data Analytics Essentials: Assignment1"
+author "Oytun Gungor"
+output: html_document
 ---
 
-This is a template example qmd output page. You may see an example R code below.
+### Personal Information
 
-```{r}
-set.seed(1)
-vec1 <- sample(LETTERS,5)
-paste0(vec1,collapse="")
-```
+Hello, my name is Oytun. I was born in Balikesir in 1990. I graduated from Marmara University - Business Administration Department in 2013. 
+
+Since 2018, I am working for startup companies(Martı, Scotty) operations development and business development department. The departments I worked make decisions based data. While I am working with data and data teams I realized that I like work with data.
+
+After I completed my master degree, I want to work as data analyst at business development teams. 
+
+[My_Linkedin_Profile](https://www.linkedin.com/in/oytun-gungor/)
+
+### Interesting R posts
+
+## Importance of R in data science projects
+
+Please find the below the summary of [Importance of R in datascience](https://emeritus.org/in/learn/importance-of-r-in-data-science/#:~:text=Many%20data%20scientists%20use%20R,and%20representation%20easy%20to%20analyze.)
+
+Here is a summary of the main points in the article:
+
+R is a free and open-source programming language for data science that is accessible to everyone. It is known for its powerful graphics, ability to perform complex statistical calculations, and wide usage by data scientists and business leaders around the world.
+
+R has a comprehensive library for creating interactive graphics and visualizations, making it easy to analyze and represent data. It is also compatible with other programming languages such as C, C++, Java, and Python, and its functions can be easily integrated into different programs.
+
+Many web applications, including Twitter, Google Analytics, and BBC, use R in data science to collect and analyze data, and create clear visualizations to draw conclusions and implement business decisions.
+
+## A Complete Introduction to R for Data Science
+
+There is a [medium post](https://ibjects.medium.com/a-complete-introduction-to-r-for-data-science-1858c69f76b0) which was published Talha.
+
+The article was completely enough who has no idea about R. It is my first document about R and programming language. 
+
+It is a guide how to start learning and development R. 
+
+There are the topics, do not hesitate to click.
+
+#These are the main topics that Talha cover:
+
+Installations
+Basic Building Blocks
+Workspace & Files
+Sequences of Numbers
+Vectors
+Missing Values
+Subsetting Vectors
+Matrices & Data Frames
+Looking at Data
+Base Graphics
+Manipulating Data with dplyr
+Getting & Cleaning Data
+Tidying Data with tidyr
+
+
+There is last post
+## Python vs. R: What’s the Difference?
+
+#Here is a summary of the main points in the article:
+
+Please [click](https://www.ibm.com/cloud/blog/python-vs-r) for whole article
+
+Python and R are both open-source programming languages that are popular in the field of data science and analytics. While Python is a general-purpose programming language, R is primarily used for statistical analysis and data visualization.
+
+Python has a large ecosystem of libraries and tools for data manipulation, automation, machine learning, and data visualization. It is particularly well-suited for deploying machine learning at scale, with libraries such as scikit-learn, Keras, and TensorFlow.
+
+R has a rich ecosystem of libraries and tools for data cleansing, data visualization, and machine learning. It is commonly used within RStudio, an integrated development environment (IDE) for simplified statistical analysis and reporting, and Shiny, an R application for interactive web-based analysis.
+
+The main difference between Python and R is in their approach to data science. While Python is a general-purpose language that can be used for a wide range of data science tasks, R is specifically designed for statistical analysis and data visualization.
+
+In terms of data collection, Python supports a wide range of data formats, while R is more focused on statistical data and is not as well-suited for working with unstructured data.
+
+Python is generally considered to be more efficient for data manipulation and preparation tasks, while R is better suited for data visualization and statistical analysis.
+
+Both Python and R have large and active communities of developers and users, and both languages are constantly evolving and improving. Ultimately, the choice between Python and R will depend on the specific needs and goals of a project.
