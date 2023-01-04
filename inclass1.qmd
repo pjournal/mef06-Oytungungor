@@ -4,13 +4,53 @@ author: "Oytun Gungor"
 date  : "2023-01-04"
 output: html_document
 ---
-
 ## Import and install required libraries
-```{r}
+
+```{r,message=FALSE}
 install.packages("tidyverse")
 install.packages("nycflights13")
+library("tidyverse")
+library("nycflights13")
+library("ggplot2")
+library("dplyr")
 ```
+
 ## Analyzing the data structure
-```{r}
-head(plans)
-```{r}
+```{r,message=FALSE}
+head(planes) 
+str(planes)
+```
+## Creating new df for looking relations between model year, seats number and motor type.
+```{r,message=FALSE}
+df_ys <- planes %>%
+  select(year,seats,type)%>%
+    arrange(desc(year))
+## Cleaning na values
+na.omit(df_ys)
+
+ggplot(df_ys, aes(x = year, y= seats, color = type))+     
+     geom_point()
+```
+According to the data and scatter plot, there is a correlation between seat number and product year. You can see that before the 1980' there is no plane with 200+ seat capability.
+
+In addition to this, the capability of all single-engine and rotorcraft planes has under 100 seats. There is another correlation between moto-type and the number of seats.
+
+As a summary you need big planes you need multi engine moto-type.
+
+### Creating new df for looking relations between model year, seats number and engine type.
+
+```{r,message=FALSE}
+my_planes <- planes %>%
+  select(year,engine,seats)%>%
+  group_by(year)%>%
+  arrange(engine)
+na.omit(my_planes)
+ggplot(my_planes, aes(x = year, y= engine,color = seats))+
+  geom_point()
+```
+
+According to the data and plot, we can some insights about engine technology. There is inferences below
+
+-   Turbo jet and turbo fan is using after 1980' in general
+-   4 cycle engine was used once at middle of 1970'
+-   Turbo jet and turbo fan technologies using by airlines companies
