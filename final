@@ -1,1 +1,72 @@
+---
+title: "Final"
+author: "Oytun Gungor"
+date: "2023-01-07"
+toc: true
+toc-location: left
+number-sections: true
+format: 
+  html:
+    theme: 
+      dark: vapor
+      light: pulse
+    fontsize: 0.8em
+editor: visual
+---
+
+```{r}
+library(cranlogs)
+library(dplyr)
+library(ggplot2)
+library(readxl)
+library(tidyr)
+```
+
+## Part I: Short and Simple (20 pts)
+
+### What will be the impact of Generative AI (e.g. Github Copilot, DALL-E 2, ChatGPT
+and similar) to our world? For instance, will they take away jobs or replace us? Will
+they create new jobs? Are we treading to a better or worse future? Explain in a short
+paragraph of strictly less than 700 characters.
+
+Generative AI refers to artificial intelligence systems that are able to generate new content, such as text, music, images, or videos. GitHub Copilot is a generative AI system that can write code for you. DALL-E is a generative AI system that can generate images from textual descriptions. ChatGPT is a generative AI system that can generate human-like text when given a prompt. These systems are trained on large datasets of examples and use machine learning techniques to generate new, original content.There is lots of approach regarding the Generative AI applications such as Github Copilot, ChatGPT. If we combine them under two points of view;
+
+Let's take the pessimistic approach first; Machines trained with large data sets can recognize objects with the help of artificial intelligence, identify the problems they encounter and solve them much faster than a human, learn new job descriptions and analyze the problems that may arise here beforehand. While doing all of these, they are not affected by any of the daily problems of the people of the century we live in, such as depression, work-life balance, not being able to spare enough time for their family and credit card debts. Aside from not being affected by daily problems, it solves emerging problems faster and more successfully than a human. While doing these, he learns new information from the sources he uses and starts to fulfill different functions.
+
+All these developments make artificial intelligence a great option for the future. While artificial intelligence seems to destroy professions such as accounting, driving, fishing, etc., professions such as piloting, teaching and auditing are expected to continue as a limited job description. It is a fact that the professions mentioned above, which are envisaged to replace artificial intelligence, constitute a serious part of the society and will take some of us from our profession.
+
+There was also the approach that similar approaches emerged after the industrial revolution and that steam engines would take away many people's jobs. But this did not happen, with the emergence of the industrial revolution, new business lines began to increase rapidly. Employees who used to work for the state, define themselves as civil servants, engineers or accountants and, in my opinion, symbolize the white collar of that time, started to fill the managerial roles that emerged in global companies that grew very rapidly after the industrial revolution, and the employment rate increased significantly compared to the pre-industrial era.
+
+If I briefly transfer my own AI applications experiences; In my master's homework, I preferred to have a part of Shiny App done by Chat GPT. I was wondering both how it works and how well it works. Previously, I found the shiny app codes on the distribution of the population on Google and asked them to blend them by writing them one under the other and to write a beginner-level shiny app code thanks to the instructions I provided. The application codes he gave as output were just a copy of the others. This time, when I asked him to list the differences with the codes I gave him, he just counted the small and meaningless differences.
+
+When we consider all this together, it is true that AI applications will kill some professions. For now, it seems very logical to just use it as an assistant. My point of view; that humanity is developing more and more every day and that the world is a better place every day. I believe that AI applications and robots will be the pioneers of developments that work on behalf of humanity and will make our lives much easier.
+
+## How do you progress on a professional data science project which the theme and required
+end product is clear but the steps are unclear? Suppose you are trying to automate a
+process which is carried out by a team of 3-5 people and through Excel sheets and it is
+a periodic task (e.g. daily or monthly). Just outline in short sentences.
+
+As the driver operation development lead for a start-up ride-hailing company, I was responsible for automating the process of calculating drivers' payments and examining their fraud behavior, which was previously done manually using Excel sheets. To achieve this, I took the following steps:
+I identified the bottlenecks and inefficiencies in the manual process and worked with the data team to automate the daily data preparation. As a result, the data was integrated into a Tableau application, allowing me to easily download it.
+I used my expertise in Google Sheets to draft a version of the calculation process and automated it using scripts. I then uploaded the daily data to Google Drive, where the calculations were completed automatically. I manually checked the results to ensure their accuracy.
+I worked with the finance team and our corporate bank to automate the payment process. I created a CSV file containing the daily payments and sent it to the finance team, who then uploaded it to the bank's system for automatic payment.
+
+
+
+
+
+## Part III
+
+### this is the first part of part III
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(readxl)
+library(tidyr)
+```
+
+mydf <-read_excel("Tuik_data.xls")
+save(mydf, file = "final/mydf.RData")
+load(file = "final/mydf.RData")
 
