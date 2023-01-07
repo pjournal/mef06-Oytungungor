@@ -2,25 +2,8 @@
 title: "Final"
 author: "Oytun Gungor"
 date: "2023-01-07"
-toc: true
-toc-location: left
-number-sections: true
-format: 
-  html:
-    theme: 
-      dark: vapor
-      light: pulse
-    fontsize: 0.8em
-editor: visual
+output: pdf_document
 ---
-
-```{r}
-library(cranlogs)
-library(dplyr)
-library(ggplot2)
-library(readxl)
-library(tidyr)
-```
 
 ## Part I: Short and Simple (20 pts)
 
@@ -65,8 +48,60 @@ library(ggplot2)
 library(readxl)
 library(tidyr)
 ```
+```{r}
+data <- read_excel("finaldata1.xlsx")
+save(data, file = "final/finaldata1.RData")
+list.files()
+load(file = "final/finaldata1.RData")
+```
 
-mydf <-read_excel("Tuik_data.xls")
-save(mydf, file = "final/mydf.RData")
-load(file = "final/mydf.RData")
+[for link](https://github.com/pjournal/mef06-Oytungungor)
+
+
+### this is the second part of part III
+```{r}
+str(data)
+summary(data)
+
+
+```
+
+
+data$domestic_departure <- as.numeric(gsub(" ", "", data$domestic_departure))
+data$international_arrival <- as.numeric(gsub(" ", "", data$international_arrival))
+data$international_departure <- as.numeric(gsub(" ", "", data$international_departure))
+data$domestic_arrival <- as.numeric(gsub(" ", "", data$domestic_arrival))
+
+
+
+library(dplyr)
+library(ggplot2)
+library(readxl)
+library(tidyr)
+
+
+### Part I
+
+data <- read_excel("finaldata1.xlsx")
+save(data, file = "final/finaldata1.RData")
+list.files()
+load(file = "final/finaldata1.RData")
+
+
+### Part II
+str(data)
+summary(data)
+
+#### converting data
+
+data$domestic_departure <- as.numeric(gsub(" ", "", data$domestic_departure))
+data$international_arrival <- as.numeric(gsub(" ", "", data$international_arrival))
+data$international_departure <- as.numeric(gsub(" ", "", data$international_departure))
+data$domestic_arrival <- as.numeric(gsub(" ", "", data$domestic_arrival))
+
+# Add a new column called "Arrival ratio"
+data$Arrival_ratio <- data$domestic_arrival / data$international_arrival
+
+# Add a new column called "Departure ratio"
+data$Departure_ratio <- data$domestic_departure / data$international_departure
 
